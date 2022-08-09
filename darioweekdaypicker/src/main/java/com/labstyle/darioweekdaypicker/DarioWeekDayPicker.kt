@@ -2,6 +2,7 @@ package com.labstyle.darioweekdaypicker
 
 import android.content.Context
 import android.util.AttributeSet
+import android.widget.HorizontalScrollView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import java.text.DateFormatSymbols
@@ -12,7 +13,7 @@ class DarioWeekDayPicker @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyle: Int = 0,
     defStyleRes: Int = 0
-): ConstraintLayout(context, attrs, defStyle, defStyleRes) {
+): HorizontalScrollView(context, attrs, defStyle, defStyleRes) {
 
     private val symbols = DateFormatSymbols(Locale.getDefault())
     private val textViews = arrayListOf<TextView>()
